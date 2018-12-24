@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Widget</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    
+  </head>
+  <body>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<style type="text/css">
+	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.socialmediaicons .fa:hover {
+  color:white;
+  opacity:0.8;
+}
+.socialmediaicons .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.socialmediaicons2 .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  border-radius: 50%;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.socialmediaicons .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.socialmediaicons .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+	
+	</style
+	
+	
+	
+    <div class="container">
+    <h1>Widget</h1>
+	<script type="text/javascript">
+	
+	$(function()
+	{
+	
+		$( "#name" ).keyup(function() {
+		  //console.log( $("#name" ).val());
+		  //alert('hi');
+			var text = $('textarea').html();
+			$('textarea').html("At www.dhl.com we offer free delivery to all international parcels. www.fiverr.com?utm_source=" + $("#name" ).val());
+		});
+		
+		$("#btnCopy").click(function(){
+		
+			$("textarea").select();
+
+			document.execCommand("copy");
+
+			alert("Copied the text: " + copyText.value);
+			
+			return false;
+
+		});
+		
+	});
+	
+	
+	</script>
+
+
+<form>
+    <div class="row">
+  <div class="form-group col-md-2">
+    <label for="name">Name</label>
+      <input id="name" name="name" type="text" class="form-control" />
+  </div>
+    </div>
+
+    <div class="row">
+  <div class="form-group col-md-5">
+  <textarea class="form-control" rows="5" id="comment">At www.dhl.com we offer free delivery to all international parcels. www.fiverr.com?utm_source=</textarea>
+  </div>
+    </div>
+
+
+<div class="row">
+  <div class="form-group col-md-5">
+<div class="socialmediaicons socialmediaicons2">
+
+<button id="btnCopy" class="btn btn-primary">Copy Text</button>
+<a href="javascript:void(0)" class="fa fa-facebook"></a>
+<a href="javascript:void(0)" class="fa fa-twitter"></a>
+
+</div>
+</div>
+	</div>
+</form>
+    </div>
+	
+  </body>
+</html>
